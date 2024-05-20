@@ -48,8 +48,19 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-9 ">
               <div className="lg:pr-24 flex items-center">
                 <div className="data w-full">
-                  <img src="https://pagedone.io/asset/uploads/1702034785.png" alt="About Us tailwind page"
-                    className="block lg:hidden mb-9 mx-auto" />
+                  <div
+                    className={(
+                      "relative md:hidden overflow-hidden rounded-xl transition-all bg-gray-100 dark:bg-gray-800 aspect-[4/3]"
+                    )}>
+                    <Image
+                      src={'/natura.png'}
+                      alt={"Thumbnail"}
+                      priority={true}
+                      className="object-cover transition-all hover:scale-[102%] transition-all duration-500 "
+                      fill
+                      sizes="(max-width: 768px) 80vw"
+                    />
+                  </div>
                   <h2 className="font-manrope font-bold text-4xl lg:text-5xl text-[#e0def4] mb-9 max-lg:text-center">
                     {'Perchè lo facciamo?'}
                   </h2>
@@ -66,7 +77,7 @@ export default function Home() {
               <div className="img-box ">
                 <div
                   className={(
-                    "relative overflow-hidden rounded-xl transition-all bg-gray-100 dark:bg-gray-800 aspect-[4/3]"
+                    "relative hidden md:block overflow-hidden rounded-xl transition-all bg-gray-100 dark:bg-gray-800 aspect-[4/3]"
                   )}>
                   <Image
                     src={'/natura.png'}
