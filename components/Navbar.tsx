@@ -5,6 +5,7 @@ import { Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import Image from "next/image";
 
+
 export interface elementType {
     name: string;
     link: string;
@@ -13,19 +14,19 @@ export interface elementType {
 const elements: elementType[] = [
     {
         name: 'Storia',
-        link: '#storia'
+        link: 'storia'
     },
     {
         name: 'Scopo',
-        link: '#scopo'
+        link: 'scopo'
     },
     {
         name: 'Team',
-        link: '#team'
+        link: 'team'
     },
     {
         name: 'Contattaci',
-        link: '#contacts'
+        link: 'contacts'
     },
 ]
 
@@ -34,8 +35,15 @@ const TOP_OFFSET = 50;
 
 const Navbar = () => {
 
+    const scrollToSection = (sectionId: string) => {
+        const targetSection = document.getElementById(sectionId);
+
+        if (targetSection) targetSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    };
+
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isNavbarChange, setNavbarChange] = useState(false);
+
 
     useEffect(() => {
         const handleScroll = () => {
@@ -78,8 +86,8 @@ const Navbar = () => {
                                 {elements.map((element: elementType, index) => (
                                     <li key={index}>
                                         <a
-                                            className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                                            href={element.link}
+                                            className="cursor-pointer ease-in-out duration-200 text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                                            onClick={() => scrollToSection(element.link.toLowerCase())}
                                         >
                                             {element.name}
                                         </a>
@@ -135,8 +143,8 @@ const Navbar = () => {
                                 {elements.map((element: elementType, index) => (
                                     <li className="m-2" key={index}>
                                         <a
-                                            className="text-gray-500 transition text-[#e0def4] hover:text-gray-500/75"
-                                            href={element.link}
+                                            className="cursor-pointer text-gray-500 transition text-[#e0def4] hover:text-gray-500/75"
+                                            onClick={() => scrollToSection(element.link.toLowerCase())}
                                         >
                                             {element.name}
                                         </a>

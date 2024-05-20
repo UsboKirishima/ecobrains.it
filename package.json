@@ -10,9 +10,14 @@
   },
   "dependencies": {
     "@headlessui/react": "^2.0.3",
+    "@types/react-animate-on-scroll": "^2.1.8",
+    "@types/react-router-dom": "^5.3.3",
     "next": "14.2.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-animate-on-scroll": "^2.1.9",
+    "react-dom": "^18",
+    "react-router-dom": "^6.23.1",
+    "taos": "^1.0.5"
   },
   "devDependencies": {
     "@types/node": "^20",

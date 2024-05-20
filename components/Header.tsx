@@ -1,6 +1,13 @@
 import Image from "next/image";
 
 const Header = () => {
+
+    const scrollToSection = (sectionId: string) => {
+        const targetSection = document.getElementById(sectionId);
+
+        if (targetSection) targetSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    };
+
     return (
 
         <section
@@ -33,15 +40,15 @@ const Header = () => {
 
                     <div className="mt-8 flex flex-wrap gap-4 justify-center text-center">
                         <a
-                            href="#chisiamo"
-                            className="backdrop-blur block w-full rounded bg-[#3e8fb0]/20 transition duration-300 px-12 py-3 text-sm font-medium text-white shadow hover:bg-[#3e8fb0]/30 hover:transition hover:duration-300 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+                            onClick={() => scrollToSection('chisiamo')}
+                            className="backdrop-blur block w-full rounded bg-[#3e8fb0]/20 cursor-pointer transition duration-300 px-12 py-3 text-sm font-medium text-white shadow hover:bg-[#3e8fb0]/30 hover:transition hover:duration-300 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
                         >
                             Chi siamo
                         </a>
 
                         <a
-                            href="#"
-                            className="block w-full rounded bg-[#e0def4]/20 px-12 py-3 text-sm font-medium text-white shadow transition duration-300 hover:bg-[#e0def4]/30 hover:transition hover:duration-300 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+                            onClick={() => scrollToSection('progetto')}
+                            className="block w-full rounded bg-[#e0def4]/20 px-12 py-3 cursor-pointer text-sm font-medium text-white shadow transition duration-300 hover:bg-[#e0def4]/30 hover:transition hover:duration-300 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
                         >
                             Progetto
                         </a>

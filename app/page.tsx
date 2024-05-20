@@ -1,18 +1,169 @@
+'use client';
 import Image from "next/image";
 import Header from "@/components/Header";
+import { useEffect, useState, useRef, MutableRefObject } from "react";
+import ScrollAnimation from 'react-animate-on-scroll';
+import ProfileCard from "@/components/ProfileCard";
+
+export interface TeamMembers {
+  name: string;
+  surname: string;
+  role: string;
+}
+
+
+export const teamMembers: TeamMembers[] = [
+  {
+    name: "DAVE BILL",
+    surname: "AGBEKORNU",
+    role: 'Team Member',
+  },
+  {
+    name: "ROBERTO",
+    surname: "AGNETTI",
+    role: 'Team Member',
+  },
+  {
+    name: "GLORIA",
+    surname: "ARCURI",
+    role: 'Team Member',
+  },
+  {
+    name: "MYKHAYLO",
+    surname: "ASHYFIN",
+    role: 'Team Member',
+  },
+  {
+    name: "RICCARDO",
+    surname: "BARBACINI",
+    role: 'Team Member',
+  },
+  {
+    name: "ADAM",
+    surname: "BEN HOUSSINE",
+    role: 'Team Member',
+  },
+  {
+    name: "LORENZO",
+    surname: "BIGNOTTI",
+    role: 'Team Member',
+  },
+  {
+    name: "LEONARDO",
+    surname: "CAVALCA",
+    role: 'Team Member',
+  },
+  {
+    name: "LUCA",
+    surname: "COPPELLOTTI",
+    role: 'Team Member',
+  },
+  {
+    name: "DARIO",
+    surname: "DI SALVATORE",
+    role: 'Team Member',
+  },
+  {
+    name: "OMAR",
+    surname: "DJEBALI",
+    role: 'Team Member',
+  },
+  {
+    name: "DIEGO",
+    surname: "ESPOSITO",
+    role: 'Team Member',
+  },
+  {
+    name: "MATTEO",
+    surname: "FORNACIARI",
+    role: 'Team Member',
+  },
+  {
+    name: "MATTEO",
+    surname: "FRANCAVILLA",
+    role: 'Team Member',
+  },
+  {
+    name: "SALVATORE",
+    surname: "FRATTARUOLO",
+    role: 'Team Member',
+  },
+  {
+    name: "MATTHEW",
+    surname: "GASPARETTI",
+    role: 'Team Member',
+  },
+  {
+    name: "RICCARDO",
+    surname: "GRANELLI",
+    role: 'Team Member',
+  },
+  {
+    name: "ADAM",
+    surname: "IZEM",
+    role: 'Team Member',
+  },
+  {
+    name: "NICOLO",
+    surname: "LAMANUZZI",
+    role: 'Team Member',
+  },
+  {
+    name: "TOMMASO",
+    surname: "PREDIERI",
+    role: 'Team Member',
+  },
+  {
+    name: "MATTIA PIO",
+    surname: "RIZZO",
+    role: 'Team Member',
+  },
+  {
+    name: "MATTIA",
+    surname: "SOZZI",
+    role: 'Team Member',
+  },
+  {
+    name: "COSTANTINO",
+    surname: "TATARU",
+    role: 'Team Member',
+  },
+  {
+    name: "IAROSLAV",
+    surname: "TOFAN",
+    role: 'Team Member',
+  },
+  {
+    name: "DAVIDE",
+    surname: "USBERTI",
+    role: 'Team Member',
+  },
+  {
+    name: "PIETRO",
+    surname: "ZACCARINI",
+    role: 'Team Member',
+  },
+  {
+    name: "MARIA",
+    surname: "ZEKO",
+    role: 'Team Member',
+  }
+]
 
 export default function Home() {
+
   return (
     <>
       <Header />
       <main className="flex mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 min-h-screen flex-col items-center justify-between p-24">
-        <section id="chisiamo" className="py-14 lg:py-24 relative">
+        <section id="chisiamo" className={`py-14 lg:py-24 relative`}>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative ">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-9">
               <div className="img-box">
                 <div
+                  data-taos-offset="400"
                   className={(
-                    "relative overflow-hidden rounded-xl transition-all bg-gray-100 dark:bg-gray-800 aspect-[4/3]"
+                    `delay-[300ms] duration-[600ms] taos:translate-x-[-200px] taos:opacity-0 relative overflow-hidden rounded-xl transition-all bg-gray-100 dark:bg-gray-800 aspect-[4/3]`
                   )}>
                   <Image
                     src={'/coop.png'}
@@ -42,7 +193,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         <section className="py-14 lg:py-24 relative">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative ">
             <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-9 ">
@@ -92,7 +242,27 @@ export default function Home() {
             </div>
           </div>
         </section>
-      </main>
+
+        <hr className="h-px my-8 bg-white w-full border-0 dark:bg-gray-700" />
+        <div className="container flex justify-center my-24 mx-auto md:px-6">
+          <section className="mb-32 text-center">
+            <h2 id="team" className="mb-12 text-white text-3xl font-bold">
+              Our <u className="text-primary dark:text-primary-400">team</u>
+            </h2>
+
+            <div className="lg:gap-xl-12 grid gap-x-6 grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+              {teamMembers.map((member: TeamMembers, index) => (
+                <ProfileCard
+                  name={member.name}
+                  surname={member.surname}
+                  role={member.role}
+                  key={index}
+                />
+              ))}
+            </div>
+          </section>
+        </div>
+      </main >
     </>
   );
 }
