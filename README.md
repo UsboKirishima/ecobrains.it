@@ -1,2 +1,3 @@
-# ecobrains.it
-Official EcoBrains website &amp; dashboard
+# EcoBrains.it
+
+Copyright © 2024 EcoBrains.it and contributors
