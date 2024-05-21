@@ -5,14 +5,14 @@ import { useEffect, useState, useRef, MutableRefObject } from "react";
 import ScrollAnimation from 'react-animate-on-scroll';
 import ProfileCard from "@/components/ProfileCard";
 
-export interface TeamMembers {
+interface TeamMembers {
   name: string;
   surname: string;
   role: string;
 }
 
 
-export const teamMembers: TeamMembers[] = [
+const teamMembers: TeamMembers[] = [
   {
     name: "DAVE BILL",
     surname: "AGBEKORNU",
