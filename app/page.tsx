@@ -221,7 +221,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="py-14 lg:py-24 relative">
+        <section id="scopo" className="py-14 lg:py-24 relative">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative ">
             <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-9 ">
               <div className="lg:pr-24 flex items-center">
@@ -272,10 +272,44 @@ export default function Home() {
         </section>
 
         <hr className="h-px my-8 bg-white w-full border-0 dark:bg-gray-700" />
+
+        <section id="storia" className="py-12">
+          <div className="container mx-auto px-1 md:px-6">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl lg:text-5xl font-bold text-[#e0def4]">
+                La Nostra Storia
+              </h2>
+            </div>
+            <div className="md:bg-[#393552]/20 md:shadow-md rounded-lg overflow-hidden">
+              <div className="p-6">
+                <h3 className="text-2xl text-center md:text-left font-semibold text-[#e0def4] mb-4">
+                  Nascita di EcoBrains & Co
+                </h3>
+                <p className="text-gray-500 mb-6 text-justify md:text-left">
+                <strong className="text-[#eb6f92]">{'EcoBrains & Co'}</strong> è una cooperativa innovativa fondata nel 2024 con l'obiettivo di promuovere la consapevolezza ambientale e rivoluzionare la gestione dei rifiuti. La nostra missione è chiara: aiutare le persone a comprendere meglio il loro impatto ambientale e suggerire modi concreti per ridurlo.
+                </p>
+                <h4 className="text-xl text-center md:text-left font-semibold text-[#e0def4] mb-2">
+                  Collaborazione e Innovazione
+                </h4>
+                <p className="text-gray-500 mb-6 text-justify md:text-left">
+                  L'idea di <strong className="text-[#eb6f92]">{'EcoBrains & Co'}</strong> è nata da un progetto congiunto tra <strong className="text-[#eb6f92]"><a href="https://www.bellacoopia.it/">{'BellaCoopia'}</a></strong> e l'Istituto Tecnico Industriale Statale <strong className="text-[#eb6f92]"><a href="https://www.itis.pr.it/">{'Leonardo da Vinci'}</a></strong> di Parma. Questo progetto ha rappresentato un perfetto esempio di collaborazione tra il mondo educativo e quello imprenditoriale.
+                </p>
+                <h4 className="text-xl text-center md:text-left font-semibold text-[#e0def4] mb-2">
+                  Tecnologia e Sostenibilità
+                </h4>
+                <p className="text-gray-500 text-justify md:text-left">
+                  La nostra cooperativa si distingue per l'applicazione di tecnologie avanzate, come l'intelligenza artificiale, per migliorare la gestione dei rifiuti. Il nostro sensore è in grado di analizzare dati in tempo reale e fornire feedback immediati agli utenti, suggerendo pratiche più ecologiche e efficienti.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr className="h-px my-8 bg-white w-full border-0 dark:bg-gray-700" />
         <div className="container flex justify-center my-24 mx-auto md:px-6">
-          <section className="mb-32 text-center">
-            <h2 id="team" className="mb-12 text-white text-3xl font-bold">
-              Our <u className="text-primary dark:text-primary-400">team</u>
+          <section className=" text-center">
+            <h2 id="team" className="mb-12 text-4xl lg:text-5xl font-bold text-[#e0def4]">
+              Il Nostro <u className="text-primary dark:text-primary-400">Team</u>
             </h2>
 
             <div className="lg:gap-xl-12 grid gap-x-6 grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
