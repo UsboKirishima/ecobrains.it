@@ -13,16 +13,24 @@ export interface elementType {
 
 const elements: elementType[] = [
     {
-        name: 'Storia',
-        link: 'storia'
+        name: 'Società',
+        link: 'chisiamo'
     },
     {
         name: 'Scopo',
         link: 'scopo'
     },
     {
+        name: 'Storia',
+        link: 'storia'
+    },
+    {
         name: 'Team',
         link: 'team'
+    },
+    {
+        name: 'Prodotto',
+        link: 'prodotto'
     },
     {
         name: 'Contattaci',
@@ -86,7 +94,7 @@ const Navbar = () => {
                                 {elements.map((element: elementType, index) => (
                                     <li key={index}>
                                         <a
-                                            className="cursor-pointer ease-in-out duration-200 text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                                            className="cursor-pointer ease-in-out duration-200  transition text-white hover:text-white/75"
                                             onClick={() => scrollToSection(element.link.toLowerCase())}
                                         >
                                             {element.name}
@@ -111,7 +119,7 @@ const Navbar = () => {
 
                         <div className="block md:hidden">
                             <button
-                                className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75 dark:bg-gray-800 dark:text-white dark:hover:text-white/75"
+                                className="rounded bg-gray-100 p-2  transition bg-gray-800 text-white hover:text-white/75"
                                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                             >
                                 <svg

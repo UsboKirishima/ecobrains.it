@@ -271,7 +271,7 @@ export default function Home() {
           </div>
         </section>
 
-        <hr className="h-px my-8 bg-white w-full border-0 dark:bg-gray-700" />
+        <hr className="h-px my-8 w-full border-0 bg-gray-700" />
 
         <section id="storia" className="py-12">
           <div className="container mx-auto px-1 md:px-6">
@@ -305,7 +305,7 @@ export default function Home() {
           </div>
         </section>
 
-        <hr className="h-px my-8 bg-white w-full border-0 dark:bg-gray-700" />
+        <hr className="h-px my-8 w-full border-0 bg-gray-700" />
         <div className="container flex justify-center my-24 mx-auto md:px-6">
           <section className=" text-center">
             <h2 id="team" className="mb-12 text-4xl lg:text-5xl font-bold text-[#e0def4]">

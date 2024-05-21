@@ -14,7 +14,7 @@ const ProfileCard = (props: MemberProp) => {
                 className=" max-w-[100px] mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20" alt="" />
 
             <p className="mb-2 font-bold text-[#6e6a86]">{props.name} {props.surname}</p>
-            <p className="text-neutral-500 dark:text-neutral-300">{props.role}</p>
+            <p className="text-neutral-300">{props.role}</p>
         </div>
     );
 }
