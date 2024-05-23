@@ -18,19 +18,19 @@ const teamMembers: TeamMembers[] = [
     name: "DAVE BILL",
     surname: "AGBEKORNU",
     role: 'Team Member',
-    iconURL: 'https://cdn3.f-cdn.com//files/download/152864535/Discord%20Emoji%20GIFs%20Animations%20%283%29.gif?fit=crop',
+    iconURL: 'https://public.nftstatic.com/static/nft/res/nft-cex/S3/1695891496801_6c9zpudi0hubtyd7nx58fy287m0olt2v.gif',
   },
   {
     name: "ROBERTO",
     surname: "AGNETTI",
     role: 'Team Member',
-    iconURL: 'https://cdn3.f-cdn.com//files/download/152864535/Discord%20Emoji%20GIFs%20Animations%20%283%29.gif?fit=crop',
+    iconURL: 'https://media.tenor.com/eb6OUfEqX7AAAAAM/boredbreakfast-bayc.gif',
   },
   {
     name: "GLORIA",
     surname: "ARCURI",
     role: 'Team Member',
-    iconURL: 'https://cdn3.f-cdn.com//files/download/152864535/Discord%20Emoji%20GIFs%20Animations%20%283%29.gif?fit=crop',
+    iconURL: 'https://i.redd.it/bqwq8a910cp71.gif',
   },
   {
     name: "MYKHAYLO",
@@ -42,7 +42,7 @@ const teamMembers: TeamMembers[] = [
     name: "RICCARDO",
     surname: "BARBACINI",
     role: 'Team Member',
-    iconURL: 'https://cdn3.f-cdn.com//files/download/152864535/Discord%20Emoji%20GIFs%20Animations%20%283%29.gif?fit=crop',
+    iconURL: 'https://preview.redd.it/r9hmw4r8p6n71.gif?width=336&auto=webp&s=b21478ffd7450d399a65d5e23a1359ffc1b69ad8',
   },
   {
     name: "ADAM",
@@ -60,13 +60,13 @@ const teamMembers: TeamMembers[] = [
     name: "LEONARDO",
     surname: "CAVALCA",
     role: 'Team Member',
-    iconURL: 'https://cdn3.f-cdn.com//files/download/152864535/Discord%20Emoji%20GIFs%20Animations%20%283%29.gif?fit=crop',
+    iconURL: 'https://media.tenor.com/8B8LF82M-2MAAAAM/bubble-ape.gif',
   },
   {
     name: "LUCA",
     surname: "COPPELLOTTI",
     role: 'Team Member',
-    iconURL: 'https://cdn3.f-cdn.com//files/download/152864535/Discord%20Emoji%20GIFs%20Animations%20%283%29.gif?fit=crop',
+    iconURL: 'https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4fa2b474-c55e-49fb-8193-716e15989bb1_400x400.gif',
   },
   {
     name: "DARIO",
@@ -78,7 +78,7 @@ const teamMembers: TeamMembers[] = [
     name: "OMAR",
     surname: "DJEBALI",
     role: 'Team Member',
-    iconURL: 'https://cdn3.f-cdn.com//files/download/152864535/Discord%20Emoji%20GIFs%20Animations%20%283%29.gif?fit=crop',
+    iconURL: 'https://lh3.googleusercontent.com/V8wpoA2AYjdPdjpXms8lySacq5-Ia2_qOQEqhWPJZpo-RWJ5KfnBXletbI0FU8kMnSY9Cfz4zLXR-QnIXUP2URIBYT5iK7EcFv8foP0',
   },
   {
     name: "DIEGO",
@@ -96,13 +96,13 @@ const teamMembers: TeamMembers[] = [
     name: "MATTEO",
     surname: "FRANCAVILLA",
     role: 'Team Member',
-    iconURL: 'https://cdn3.f-cdn.com//files/download/152864535/Discord%20Emoji%20GIFs%20Animations%20%283%29.gif?fit=crop',
+    iconURL: 'https://digirare.com/storage/drooling-apes/SHITCOINAPE.gif',
   },
   {
     name: "SALVATORE",
     surname: "FRATTARUOLO",
     role: 'Team Member',
-    iconURL: 'https://cdn3.f-cdn.com//files/download/152864535/Discord%20Emoji%20GIFs%20Animations%20%283%29.gif?fit=crop',
+    iconURL: 'https://lh3.googleusercontent.com/bHB_pyWOTIbIP07X26zJfT6-9rfSOOHPD_qddqQN97_dU0h4t54AVHTyZU2g3trXZcfw5b00Tmhs5aRxAWvNj8M_wuWsclNLFQ=s400',
   },
   {
     name: "MATTHEW",
@@ -114,13 +114,13 @@ const teamMembers: TeamMembers[] = [
     name: "RICCARDO",
     surname: "GRANELLI",
     role: 'Team Member',
-    iconURL: 'https://cdn3.f-cdn.com//files/download/152864535/Discord%20Emoji%20GIFs%20Animations%20%283%29.gif?fit=crop',
+    iconURL: 'https://www.mizioblog.com/wp-content/uploads/2022/05/Ape-Bored-Animations-5-Limited-Edition.gif',
   },
   {
     name: "ADAM",
     surname: "IZEM",
     role: 'RSPP & RSL',
-    iconURL: 'https://cdn.discordapp.com/attachments/1165008819391299769/1242382427343687700/download.gif?ex=664da24d&is=664c50cd&hm=7dc8f18b8f28111f08181d500394d85ee94ec6c74160bcda576e24f3a259f187&',
+    iconURL: 'https://lh3.googleusercontent.com/AZ_p-oxOH62n2ADSqt17cTHVdPOzgPEuoOiHyERpp1Z3OyvkOxnV7j2W1-6Ams1EmVkfNW2YQYJwN4LVFjUgIGVYNjLbdACypA=s400',
   },
   {
     name: "NICOLO",
@@ -144,19 +144,19 @@ const teamMembers: TeamMembers[] = [
     name: "MATTIA",
     surname: "SOZZI",
     role: 'Team Member',
-    iconURL: 'https://cdn3.f-cdn.com//files/download/152864535/Discord%20Emoji%20GIFs%20Animations%20%283%29.gif?fit=crop',
+    iconURL: 'https://i.imgur.com/kCdYDxl.gif',
   },
   {
     name: "COSTANTINO",
     surname: "TATARU",
     role: 'Team Member',
-    iconURL: 'https://cdn3.f-cdn.com//files/download/152864535/Discord%20Emoji%20GIFs%20Animations%20%283%29.gif?fit=crop',
+    iconURL: 'https://i.pinimg.com/originals/0a/75/f4/0a75f485e66a1584e5bdf56282797b2e.gif',
   },
   {
     name: "IAROSLAV",
     surname: "TOFAN",
     role: 'Team Member',
-    iconURL: 'https://cdn3.f-cdn.com//files/download/152864535/Discord%20Emoji%20GIFs%20Animations%20%283%29.gif?fit=crop',
+    iconURL: 'https://lh3.googleusercontent.com/tG4Y-JgSWYHrTt0ZD6x_A4B564708hXOFgV7LiTDzAwWvCNSNE94N3IIxaEDN2qp_lJdSrN7-nqZGnICas3RUU2dEzTfKyKA-FcU=s400',
   },
   {
     name: "DAVIDE",
@@ -174,7 +174,7 @@ const teamMembers: TeamMembers[] = [
     name: "MARIA",
     surname: "ZEKO",
     role: 'Team Member',
-    iconURL: 'https://cdn3.f-cdn.com//files/download/152864535/Discord%20Emoji%20GIFs%20Animations%20%283%29.gif?fit=crop',
+    iconURL: 'https://i.redd.it/rfqdd1k1wv781.gif',
   }
 ]
 
