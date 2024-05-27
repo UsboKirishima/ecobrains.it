@@ -111,7 +111,7 @@ const Navbar = () => {
                         <div className="sm:flex sm:gap-4">
                             <a
                                 className="rounded-md backdrop-blur bg-[#393552]/30 px-5 py-2.5 text-sm font-medium text-white shadow transition duration-500 hover:transition hover:duration-500 hover:bg-[#2a273f]"
-                                href="https://dashboard.ecobrains.it"
+                                href="/dashboard/login.html"
                             >
                                 Login
                             </a>

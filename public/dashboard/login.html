@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DashBrains - Login</title>
+    <link rel="icon" href="/ecobrains3.png">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: darkgreen;
+        }
+
+        .container {
+            position: absolute;
+            width: 400px;
+            height: 600px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+            height: 350px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border-color: black;
+            border-width: 2px;
+        }
+
+        input[type="password"] {
+            position: relative;
+            top: 45px;
+            width: 100%;
+            height: 30px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="text"] {
+            position: relative;
+            top: 25px;
+            width: 100%;
+            height: 30px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            position: absolute;
+            background-color: darkgreen;
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 75%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 20px;
+            top: 170px;
+            transition: 300ms;
+        }
+
+        .agree {
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            top: 65px;
+        }
+
+        input[type="checkbox"] {
+            position: relative;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+            cursor: pointer;
+            top: 65px;
+        }
+
+        input[type="checkbox"]:checked {
+            background-color: lightgreen;
+        }
+
+        button:hover {
+            opacity: 0.8;
+            transition: 300ms;
+        }
+
+        .hidden {
+            display: flex;
+            visibility: hidden;
+            position: relative;
+            top: -50px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+            position: absolute;
+            width: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            position: relative;
+            top: 70px;
+        }
+
+        form {
+            position: relative;
+            top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="/ecobrains3.png">
+        <h2 class="title">Entra su EcoBrains</h2>
+        <form id="loginForm">
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <button type="submit" id="loginButton">Login</button>
+            <p id="errorMessage" class="hidden">Troppi tentativi errati, benjamin non ti farà passare!</p>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("loginButton").addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+            window.location.href = "/dashboard/home.html"; // Redirect to DashBoard
+        });
+    </script>
+
+</body>
+
+</html>
