@@ -47,7 +47,7 @@ const Header = () => {
                         </a>
 
                         <a
-                            onClick={() => scrollToSection('progetto')}
+                            onClick={() => scrollToSection('prodotto')}
                             className="block w-full rounded bg-[#e0def4]/20 px-12 py-3 cursor-pointer text-sm font-medium text-white shadow transition duration-300 hover:bg-[#e0def4]/30 hover:transition hover:duration-300 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
                         >
                             Progetto
